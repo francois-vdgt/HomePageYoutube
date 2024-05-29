@@ -1,14 +1,8 @@
 import VideoCard from "../video-card/VideoCard"
 import "./mainContentHP.scss"
 import data from "../../data/videoYT.json"
-import {fetchTrendingVideos} from "../../api"
-
 export default function MainContentHP(){
     
-    const tabVideo = fetchTrendingVideos()
-    console.log(tabVideo)
-
-
     return(
         <div className="mainContent-container">
             {data.videos.map((video) => (
