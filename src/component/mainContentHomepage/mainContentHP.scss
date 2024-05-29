@@ -1,0 +1,30 @@
+.mainContent-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 42px 16px;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    padding: 12px 30px;
+    margin-top: 136px;
+}
+
+@media screen and (max-width: 1550px){
+    .mainContent-container{
+      justify-content: space-evenly;
+      gap: 42px;
+    }
+}
+
+@media screen and (max-width: 626px){
+  .mainContent-container{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 475px){
+  .mainContent-container{
+    justify-content: space-evenly;
+    gap: 42px;
+  }
+}

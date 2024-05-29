@@ -1,0 +1,23 @@
+@import "../../style/variable"; 
+
+.btn-login{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 22px;
+    margin: 0px;
+    gap: 8px;
+    font-family: $text-font;
+    border: solid 1px rgba(211, 205, 205, 0.596);
+    background-color: transparent;
+    font-weight: 500;
+    font-size:14px;
+    color: #065fd4;
+}
+
+.btn-login:hover{
+    cursor: pointer;
+    background-color: #065fd40a;
+    border-color: #065fd40a;
+}

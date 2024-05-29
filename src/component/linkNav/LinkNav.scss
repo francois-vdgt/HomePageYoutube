@@ -1,0 +1,21 @@
+@import "../../style/variable";
+
+.link-nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 8px 12px;
+    font-family: $text-font;
+    border-radius: 12px;
+}
+
+.link-nav-menu:hover{
+    background-color: rgba(206, 202, 202, 0.507);
+    cursor: pointer;
+}
+
+.close{
+    flex-direction: column;
+    gap: 6px;
+    font-size: xx-small;
+}

@@ -1,0 +1,84 @@
+@import '../../style/_variable.scss'; 
+
+.container-card{
+    font-family: $text-font;
+    max-width: 25%;
+    width: 19%;
+    min-width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: fit-content;
+}
+
+.videoCard-minia{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.cont-videoCard-info{
+    display: flex;
+    gap: 12px;
+}
+
+.videoCard-channel-img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.cont-text-videoCard{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.videoCard-Title{
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.videoCard-Channel-name, .videoCard-viewAndDate{
+    font-size: 14px;
+    color: #606060;
+}
+
+
+@media screen and (max-width: 1202px){
+    .container-card{
+        min-width: 400px;
+        width: auto;
+    }
+    .videoCard-minia{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1092px){
+    .container-card{
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 892px){
+    .container-card{
+      min-width: 80%;
+    }
+
+    .videoCard-minia{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .container-card{
+        min-width: 100%;
+      }
+
+      .videoCard-minia{
+        border-radius: 0px;
+    }
+}

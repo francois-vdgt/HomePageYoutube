@@ -1,0 +1,73 @@
+@import "../../style/variable";
+
+.cont-WidgetBar{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    margin-top: 58px;
+    position: fixed;
+    width: calc(100% - 190px);
+    background-color: white;
+}
+
+.widgetList{
+    box-sizing: border-box;
+    display: flex;
+    gap: 12px;
+    list-style:none;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 30px;
+    margin: 0;
+    height: 64px;
+    margin-top: 12px;
+}
+
+.widgetList::-webkit-scrollbar{
+    opacity: 0;
+    height: 6px;
+}
+
+ .widgetList:hover::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.438);
+    cursor: pointer;
+ }
+
+.widgetList > li {
+    font-family: $text-font;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgba(231, 229, 229, 0.452);
+    text-wrap: nowrap;
+    height: fit-content;
+}
+
+.widgetList > li:hover{
+    background-color: rgba(197, 193, 193, 0.452);
+    cursor: pointer;
+}
+
+.closeSizeWidget{
+    width: 94%;
+}
+
+@media screen and (max-width: 1000px){
+    .cont-WidgetBar{
+        width: 100%;
+    }
+    .closeSizeWidget{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 626px){
+    .cont-WidgetBar{
+        width: 100%;
+    }
+    .closeSizeWidget{
+        width: 100%;
+    }
+}
